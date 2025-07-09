@@ -45,7 +45,8 @@ public:
         ik_solver_.reset(new KDL::ChainIkSolverPos_LMA(kdl_chain_));
 
         pose_sub_ = nh_.subscribe("/target_pose", 1, &IKSolverNode::poseCallback, this);
-        joint_pub_ = nh_.advertise<sensor_msgs::JointState>("/joint_states", 1);
+        joint_pub_ = nh_.advertise<sensor_msgs::JointState>("/ik_joint_states", 1);
+
 
         ROS_INFO("IK Solver Node initialized.");
     }

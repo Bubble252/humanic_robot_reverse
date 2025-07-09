@@ -1,0 +1,4 @@
+<launch>
+  <node name="joint_state_merger_node" pkg="joint_state_merger" type="joint_state_merger_node" output="screen"/>
+</launch>
+

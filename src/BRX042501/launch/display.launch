@@ -1,20 +1,17 @@
 <launch>
-  <arg
-    name="model" />
-  <param
-    name="robot_description"
-    textfile="$(find BRX042501)/urdf/BRX042501_fixed_wheel_change_axis.urdf" />
-  <node
-    name="joint_state_publisher_gui"
-    pkg="joint_state_publisher_gui"
-    type="joint_state_publisher_gui" />
-  <node
-    name="robot_state_publisher"
-    pkg="robot_state_publisher"
-    type="robot_state_publisher" />
-  <node
-    name="rviz"
-    pkg="rviz"
-    type="rviz"
-    args="-d $(find BRX042501)/urdf.rviz" />
+  <arg name="model" />
+
+  <param name="robot_description" textfile="$(find BRX042501)/urdf/BRX042501_fixed_wheel_change_axis.urdf" />
+
+  <!-- joint_state_publisher_gui 节点，发布到 /joint_states_gui 而不是默认的 /joint_states -->
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" output="screen">
+    <remap from="/joint_states" to="/joint_states_gui"/>
+  </node>
+
+  <!-- robot_state_publisher 从其他节点（如 merger 节点）订阅 /joint_states -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <!-- 启动 RViz，并加载指定配置 -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find BRX042501)/urdf.rviz" />
 </launch>
+
