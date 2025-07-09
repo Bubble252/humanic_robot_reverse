@@ -1,0 +1,2 @@
+brx_ik_solver
+-DCATKIN_DEVEL_PREFIX=/root/arm/reverse_ws/devel -DCMAKE_INSTALL_PREFIX=/root/arm/reverse_ws/install -G Unix Makefiles

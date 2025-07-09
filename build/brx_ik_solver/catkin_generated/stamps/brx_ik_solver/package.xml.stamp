@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>brx_ik_solver</name>
+  <version>0.0.0</version>
+  <description>The brx_ik_solver package</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>MIT</license>
+
+  <!-- 构建依赖 -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>kdl_parser</build_depend>
+
+  <!-- 运行依赖 -->
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>urdf</exec_depend>
+  <exec_depend>kdl_parser</exec_depend>
+
+  <export></export>
+</package>
+
