@@ -1,0 +1,8 @@
+prefix=/root/arm/reverse_ws/devel
+
+Name: BRX042501
+Description: Description of BRX042501
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

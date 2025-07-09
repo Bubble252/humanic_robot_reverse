@@ -68,3 +68,11 @@
 /root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/edit_cache.dir
 /root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/roscpp_generate_messages_eus.dir
 /root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/rebuild_cache.dir
+/root/arm/reverse_ws/build/BRX042501/CMakeFiles/install/strip.dir
+/root/arm/reverse_ws/build/BRX042501/CMakeFiles/install/local.dir
+/root/arm/reverse_ws/build/BRX042501/CMakeFiles/install.dir
+/root/arm/reverse_ws/build/BRX042501/CMakeFiles/list_install_components.dir
+/root/arm/reverse_ws/build/BRX042501/CMakeFiles/rebuild_cache.dir
+/root/arm/reverse_ws/build/BRX042501/CMakeFiles/edit_cache.dir
+/root/arm/reverse_ws/build/BRX042501/CMakeFiles/test.dir
+/root/arm/reverse_ws/build/BRX042501/CMakeFiles/_catkin_empty_exported_target.dir

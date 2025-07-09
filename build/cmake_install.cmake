@@ -147,6 +147,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/root/arm/reverse_ws/build/gtest/cmake_install.cmake")
   include("/root/arm/reverse_ws/build/brx_ik_solver/cmake_install.cmake")
+  include("/root/arm/reverse_ws/build/BRX042501/cmake_install.cmake")
 
 endif()
 
