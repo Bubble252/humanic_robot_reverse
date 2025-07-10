@@ -53,38 +53,40 @@ public:
 
 private:
     void poseCallback(const geometry_msgs::PoseStamped::ConstPtr& msg) {
-        KDL::Frame target_pose(
-            KDL::Rotation::Quaternion(
-                msg->pose.orientation.x,
-                msg->pose.orientation.y,
-                msg->pose.orientation.z,
-                msg->pose.orientation.w),
-            KDL::Vector(
-                msg->pose.position.x,
-                msg->pose.position.y,
-                msg->pose.position.z));
+    // 将 orientation.x/y/z 解释为欧拉角 roll, pitch, yaw
+    double roll = msg->pose.orientation.x;
+    double pitch = msg->pose.orientation.y;
+    double yaw = msg->pose.orientation.z;
 
-        KDL::JntArray q_init(kdl_chain_.getNrOfJoints());
-        KDL::JntArray q_result(kdl_chain_.getNrOfJoints());
+    KDL::Frame target_pose(
+        KDL::Rotation::RPY(roll, pitch, yaw), // 使用欧拉角
+        KDL::Vector(
+            msg->pose.position.x,
+            msg->pose.position.y,
+            msg->pose.position.z));
 
-        for (unsigned int i = 0; i < kdl_chain_.getNrOfJoints(); ++i)
-            q_init(i) = 0.0;
+    KDL::JntArray q_init(kdl_chain_.getNrOfJoints());
+    KDL::JntArray q_result(kdl_chain_.getNrOfJoints());
 
-        int ret = ik_solver_->CartToJnt(q_init, target_pose, q_result);
-        if (ret >= 0) {
-            sensor_msgs::JointState joint_msg;
-            joint_msg.header.stamp = ros::Time::now();
+    for (unsigned int i = 0; i < kdl_chain_.getNrOfJoints(); ++i)
+        q_init(i) = 0.0;
 
-            for (unsigned int i = 0; i < kdl_chain_.getNrOfJoints(); ++i) {
-                joint_msg.name.push_back("ArmL0" + std::to_string(i + 2) + "_Joint");  // 名字需与 URDF 一致
-                joint_msg.position.push_back(q_result(i));
-            }
+    int ret = ik_solver_->CartToJnt(q_init, target_pose, q_result);
+    if (ret >= 0) {
+        sensor_msgs::JointState joint_msg;
+        joint_msg.header.stamp = ros::Time::now();
 
-            joint_pub_.publish(joint_msg);
-        } else {
-            ROS_WARN("IK solver failed to find a solution.");
+        for (unsigned int i = 0; i < kdl_chain_.getNrOfJoints(); ++i) {
+            joint_msg.name.push_back("ArmL0" + std::to_string(i + 2) + "_Joint");
+            joint_msg.position.push_back(q_result(i));
         }
+
+        joint_pub_.publish(joint_msg);
+    } else {
+        ROS_WARN("IK solver failed to find a solution.");
     }
+   }
+
 
     ros::NodeHandle nh_;
     ros::Subscriber pose_sub_;

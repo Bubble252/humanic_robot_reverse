@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
+subdirs("reverse_bringup")
 subdirs("joint_state_merger")
 subdirs("brx_ik_solver")
 subdirs("BRX042501")

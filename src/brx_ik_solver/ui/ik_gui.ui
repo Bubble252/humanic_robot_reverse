@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IKGui</class>
+ <widget class="QWidget" name="IKGui">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item><widget class="QDoubleSpinBox" name="xSpinBox"/></item>
+   <item><widget class="QDoubleSpinBox" name="ySpinBox"/></item>
+   <item><widget class="QDoubleSpinBox" name="zSpinBox"/></item>
+   <item><widget class="QDoubleSpinBox" name="rollSpinBox"/></item>
+   <item><widget class="QDoubleSpinBox" name="pitchSpinBox"/></item>
+   <item><widget class="QDoubleSpinBox" name="yawSpinBox"/></item>
+   <item><widget class="QPushButton" name="sendButton"><property name="text"><string>发送目标</string></property></widget></item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+

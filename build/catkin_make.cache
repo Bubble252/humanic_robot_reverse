@@ -1,2 +1,2 @@
-BRX042501:brx_ik_solver:joint_state_merger
+BRX042501:brx_ik_solver:joint_state_merger:reverse_bringup
 -DCATKIN_DEVEL_PREFIX=/root/arm/reverse_ws/devel -DCMAKE_INSTALL_PREFIX=/root/arm/reverse_ws/install -G Unix Makefiles

@@ -7,21 +7,33 @@
   <maintainer email="you@example.com">Your Name</maintainer>
   <license>MIT</license>
 
-  <!-- 构建依赖 -->
+  <!-- 构建工具 -->
   <buildtool_depend>catkin</buildtool_depend>
 
+  <!-- ROS构建依赖 -->
   <build_depend>roscpp</build_depend>
   <build_depend>geometry_msgs</build_depend>
   <build_depend>sensor_msgs</build_depend>
   <build_depend>urdf</build_depend>
   <build_depend>kdl_parser</build_depend>
+  <build_depend>tf</build_depend>
 
-  <!-- 运行依赖 -->
+  <!-- Qt构建依赖 -->
+  <build_depend>qtbase5-dev</build_depend>
+  <build_depend>qttools5-dev-tools</build_depend>
+
+  <!-- 构建导出依赖 -->
+  <build_export_depend>qtbase5-dev</build_export_depend>
+  <build_export_depend>qttools5-dev-tools</build_export_depend>
+
+  <!-- 运行时依赖 -->
   <exec_depend>roscpp</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
   <exec_depend>urdf</exec_depend>
   <exec_depend>kdl_parser</exec_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>libqt5widgets5</exec_depend>
 
   <export></export>
 </package>

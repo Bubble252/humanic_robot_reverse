@@ -1,0 +1,15 @@
+<launch>
+    <!-- 启动 joint_state_merger -->
+    <node pkg="joint_state_merger" type="joint_state_merger_node" name="joint_state_merger_node" output="screen" />
+
+    <!-- 启动 ik_solver_node -->
+    <node pkg="brx_ik_solver" type="ik_solver_node" name="ik_solver_node" output="screen" />
+
+    <!-- 启动 ik_gui_publisher_node -->
+    <node pkg="brx_ik_solver" type="ik_gui_publisher_node" name="ik_gui_publisher_node" output="screen" />
+
+    <!-- 可根据需要添加 BRX042501 的其它节点 -->
+    <!-- 比如 display.launch 中的机器人状态发布器、joint_state_publisher 等 -->
+    <include file="$(find BRX042501)/launch/display.launch" />
+</launch>
+
