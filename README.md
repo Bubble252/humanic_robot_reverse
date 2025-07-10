@@ -77,4 +77,19 @@ rostopic echo /joint_states
 
 ```
 
-下面是GPT的回答...
+
+
+更新操作方法
+先用下面这个开启一个终端
+docker start -ai kdl_env
+roscore
+
+增加一个终端
+docker exec -it kdl_env /bin/bash
+
+运行
+roslaunch reverse_bringup all_nodes.launch
+
+
+
+
