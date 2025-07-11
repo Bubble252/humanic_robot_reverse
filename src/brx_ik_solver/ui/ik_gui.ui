@@ -2,17 +2,42 @@
 <ui version="4.0">
  <class>IKGui</class>
  <widget class="QWidget" name="IKGui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>544</width>
+    <height>264</height>
+   </rect>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
-   <item><widget class="QDoubleSpinBox" name="xSpinBox"/></item>
-   <item><widget class="QDoubleSpinBox" name="ySpinBox"/></item>
-   <item><widget class="QDoubleSpinBox" name="zSpinBox"/></item>
-   <item><widget class="QDoubleSpinBox" name="rollSpinBox"/></item>
-   <item><widget class="QDoubleSpinBox" name="pitchSpinBox"/></item>
-   <item><widget class="QDoubleSpinBox" name="yawSpinBox"/></item>
-   <item><widget class="QPushButton" name="sendButton"><property name="text"><string>发送目标</string></property></widget></item>
+   <item>
+    <widget class="QDoubleSpinBox" name="xSpinBox"/>
+   </item>
+   <item>
+    <widget class="QDoubleSpinBox" name="ySpinBox"/>
+   </item>
+   <item>
+    <widget class="QDoubleSpinBox" name="zSpinBox"/>
+   </item>
+   <item>
+    <widget class="QDoubleSpinBox" name="rollSpinBox"/>
+   </item>
+   <item>
+    <widget class="QDoubleSpinBox" name="pitchSpinBox"/>
+   </item>
+   <item>
+    <widget class="QDoubleSpinBox" name="yawSpinBox"/>
+   </item>
+   <item>
+    <widget class="QPushButton" name="sendButton">
+     <property name="text">
+      <string>发送目标</string>
+     </property>
+    </widget>
+   </item>
   </layout>
  </widget>
  <resources/>
  <connections/>
 </ui>
-

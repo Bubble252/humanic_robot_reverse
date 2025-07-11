@@ -9,6 +9,7 @@
 #include <kdl/chainfksolverpos_recursive.hpp>
 #include <kdl/chainiksolverpos_lma.hpp>
 #include <kdl/chainiksolvervel_pinv.hpp>
+#include <tf/transform_datatypes.h>
 
 class IKSolverNode {
 public:
@@ -54,16 +55,39 @@ public:
 private:
     void poseCallback(const geometry_msgs::PoseStamped::ConstPtr& msg) {
     // 将 orientation.x/y/z 解释为欧拉角 roll, pitch, yaw
-    double roll = msg->pose.orientation.x;
-    double pitch = msg->pose.orientation.y;
-    double yaw = msg->pose.orientation.z;
+    //double roll = msg->pose.orientation.x;
+    //double pitch = msg->pose.orientation.y;
+    //double yaw = msg->pose.orientation.z;
+    
+    tf::Quaternion quat;
+    tf::quaternionMsgToTF(msg->pose.orientation, quat);
 
-    KDL::Frame target_pose(
-        KDL::Rotation::RPY(roll, pitch, yaw), // 使用欧拉角
-        KDL::Vector(
-            msg->pose.position.x,
-            msg->pose.position.y,
-            msg->pose.position.z));
+    double roll, pitch, yaw;
+    tf::Matrix3x3(quat).getRPY(roll, pitch, yaw);
+    
+  //  KDL::Frame target_pose(
+  //      KDL::Rotation::RPY(roll, pitch, yaw), // 使用欧拉角
+   //     KDL::Vector(
+   //         msg->pose.position.x,
+   //         msg->pose.position.y,
+   //         msg->pose.position.z));
+   
+   // 构造目标姿态（世界坐标系下）
+KDL::Frame target_world(
+    KDL::Rotation::RPY(roll, pitch, yaw),
+    KDL::Vector(msg->pose.position.x, msg->pose.position.y, msg->pose.position.z));
+
+// ArmL01_Link 相对 base_link 的姿态补偿（取逆变换）
+KDL::Frame base_to_ArmL01(
+    KDL::Rotation::RPY(1.57, 0, 3.14), // 注意取负号
+    KDL::Vector(0, 0, 0)); // 假设只有姿态补偿，没有位置偏移（或者根据TF填充）
+
+// 将目标从 base_link 系转换到 ArmL01_Link 系下
+KDL::Frame target_pose = base_to_ArmL01 * target_world;
+
+
+
+
 
     KDL::JntArray q_init(kdl_chain_.getNrOfJoints());
     KDL::JntArray q_result(kdl_chain_.getNrOfJoints());
@@ -76,16 +100,26 @@ private:
         sensor_msgs::JointState joint_msg;
         joint_msg.header.stamp = ros::Time::now();
 
-        for (unsigned int i = 0; i < kdl_chain_.getNrOfJoints(); ++i) {
-            joint_msg.name.push_back("ArmL0" + std::to_string(i + 2) + "_Joint");
-            joint_msg.position.push_back(q_result(i));
-        }
+    // 你自己设定的关节名列表（确保顺序与KDL chain一致）
+    std::vector<std::string> joint_names = {
+        "ArmL02_Joint", "ArmL03_Joint", "ArmL04_Joint",
+        "ArmL05_Joint", "ArmL06_Joint", "ArmL07_Joint",
+        "ArmL08_Joint", "ArmL09_Joint"
+    };
+
+
+         for (unsigned int i = 0; i < kdl_chain_.getNrOfJoints(); ++i) {
+          //  joint_msg.name.push_back("ArmL0" + std::to_string(i + 2) + "_Joint");
+           joint_msg.name.push_back(joint_names[i]);
+           joint_msg.position.push_back(q_result(i));
+
+         }
 
         joint_pub_.publish(joint_msg);
     } else {
         ROS_WARN("IK solver failed to find a solution.");
     }
-   }
+ }
 
 
     ros::NodeHandle nh_;

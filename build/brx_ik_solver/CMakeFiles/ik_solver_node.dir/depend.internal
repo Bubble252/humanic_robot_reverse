@@ -5,9 +5,15 @@ brx_ik_solver/CMakeFiles/ik_solver_node.dir/ik_solver_node_autogen/mocs_compilat
  /root/arm/reverse_ws/build/brx_ik_solver/ik_solver_node_autogen/mocs_compilation.cpp
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o
  /opt/ros/noetic/include/geometry_msgs/Point.h
+ /opt/ros/noetic/include/geometry_msgs/PointStamped.h
  /opt/ros/noetic/include/geometry_msgs/Pose.h
  /opt/ros/noetic/include/geometry_msgs/PoseStamped.h
  /opt/ros/noetic/include/geometry_msgs/Quaternion.h
+ /opt/ros/noetic/include/geometry_msgs/QuaternionStamped.h
+ /opt/ros/noetic/include/geometry_msgs/Transform.h
+ /opt/ros/noetic/include/geometry_msgs/TransformStamped.h
+ /opt/ros/noetic/include/geometry_msgs/Vector3.h
+ /opt/ros/noetic/include/geometry_msgs/Vector3Stamped.h
  /opt/ros/noetic/include/kdl_parser/kdl_parser.hpp
  /opt/ros/noetic/include/kdl_parser/visibility_control.hpp
  /opt/ros/noetic/include/ros/advertise_options.h
@@ -68,6 +74,14 @@ brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o
  /opt/ros/noetic/include/rosconsole/macros_generated.h
  /opt/ros/noetic/include/sensor_msgs/JointState.h
  /opt/ros/noetic/include/std_msgs/Header.h
+ /opt/ros/noetic/include/tf/LinearMath/Matrix3x3.h
+ /opt/ros/noetic/include/tf/LinearMath/MinMax.h
+ /opt/ros/noetic/include/tf/LinearMath/QuadWord.h
+ /opt/ros/noetic/include/tf/LinearMath/Quaternion.h
+ /opt/ros/noetic/include/tf/LinearMath/Scalar.h
+ /opt/ros/noetic/include/tf/LinearMath/Transform.h
+ /opt/ros/noetic/include/tf/LinearMath/Vector3.h
+ /opt/ros/noetic/include/tf/transform_datatypes.h
  /opt/ros/noetic/include/urdf/model.h
  /opt/ros/noetic/include/urdf/urdfdom_compatibility.h
  /opt/ros/noetic/include/urdf/visibility_control.hpp

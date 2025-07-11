@@ -14,12 +14,12 @@ class IKGuiNode : public QWidget {
 public:
     IKGuiNode(ros::NodeHandle& nh, QWidget *parent = nullptr) : QWidget(parent), nh_(nh) {
         QVBoxLayout *layout = new QVBoxLayout(this);
-        xSpinBox = new QDoubleSpinBox(this); xSpinBox->setRange(-1.0, 1.0); layout->addWidget(xSpinBox);
-        ySpinBox = new QDoubleSpinBox(this); ySpinBox->setRange(-1.0, 1.0); layout->addWidget(ySpinBox);
-        zSpinBox = new QDoubleSpinBox(this); zSpinBox->setRange(-1.0, 1.0); layout->addWidget(zSpinBox);
-        rollSpinBox = new QDoubleSpinBox(this); rollSpinBox->setRange(-3.14, 3.14); layout->addWidget(rollSpinBox);
-        pitchSpinBox = new QDoubleSpinBox(this); pitchSpinBox->setRange(-3.14, 3.14); layout->addWidget(pitchSpinBox);
-        yawSpinBox = new QDoubleSpinBox(this); yawSpinBox->setRange(-3.14, 3.14); layout->addWidget(yawSpinBox);
+        xSpinBox = new QDoubleSpinBox(this); xSpinBox->setRange(-100.0, 100.0); layout->addWidget(xSpinBox);
+        ySpinBox = new QDoubleSpinBox(this); ySpinBox->setRange(-100.0, 100.0); layout->addWidget(ySpinBox);
+        zSpinBox = new QDoubleSpinBox(this); zSpinBox->setRange(-100.0, 100.0); layout->addWidget(zSpinBox);
+        rollSpinBox = new QDoubleSpinBox(this); rollSpinBox->setRange(-314, 314); layout->addWidget(rollSpinBox);
+        pitchSpinBox = new QDoubleSpinBox(this); pitchSpinBox->setRange(-314, 314); layout->addWidget(pitchSpinBox);
+        yawSpinBox = new QDoubleSpinBox(this); yawSpinBox->setRange(-314, 314); layout->addWidget(yawSpinBox);
         QPushButton *sendButton = new QPushButton("发送目标姿态", this); layout->addWidget(sendButton);
         connect(sendButton, &QPushButton::clicked, this, &IKGuiNode::sendPose);
 
