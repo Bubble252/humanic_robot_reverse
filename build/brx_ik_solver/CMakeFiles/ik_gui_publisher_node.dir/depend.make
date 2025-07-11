@@ -72,6 +72,8 @@ brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /root/arm/reverse_ws/src/brx_ik_solver/src/ik_gui_publisher_node.cpp
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -79,6 +81,7 @@ brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_cxx11.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic_msvc.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasicatomic.h
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearraylist.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qchar.h
@@ -140,6 +143,7 @@ brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qsystemdetection.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
@@ -179,6 +183,10 @@ brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDoubleSpinBox
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFormLayout
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
@@ -187,7 +195,11 @@ brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qapplication.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdesktopwidget.h
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qformlayout.h
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgroupbox.h
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayoutitem.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
@@ -197,4 +209,5 @@ brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: brx_ik_solver/ik_gui_publisher_node_autogen/include/ik_gui_publisher_node.moc
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: brx_ik_solver/ik_gui_publisher_node_autogen/include/ui_ik_gui.h
 

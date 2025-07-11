@@ -5,21 +5,19 @@
 class JointStateMerger {
 public:
     JointStateMerger() {
-        sub_ik_ = nh_.subscribe("/ik_joint_states", 1, &JointStateMerger::ikCallback, this);
         sub_gui_ = nh_.subscribe("/joint_states_gui", 1, &JointStateMerger::guiCallback, this);
+        sub_left_ = nh_.subscribe("/left_ik_joint_states", 1, &JointStateMerger::leftCallback, this);
+        sub_right_ = nh_.subscribe("/right_ik_joint_states", 1, &JointStateMerger::rightCallback, this);
         pub_ = nh_.advertise<sensor_msgs::JointState>("/joint_states", 1);
     }
 
 private:
-    sensor_msgs::JointState latest_ik_;
-    sensor_msgs::JointState latest_gui_;
-    ros::Time last_ik_time_, last_gui_time_;
+    ros::NodeHandle nh_;
+    ros::Subscriber sub_gui_, sub_left_, sub_right_;
+    ros::Publisher pub_;
 
-    void ikCallback(const sensor_msgs::JointState::ConstPtr& msg) {
-        latest_ik_ = *msg;
-        last_ik_time_ = ros::Time::now();
-        publishMerged();
-    }
+    sensor_msgs::JointState latest_gui_, latest_left_, latest_right_;
+    ros::Time last_gui_time_, last_left_time_, last_right_time_;
 
     void guiCallback(const sensor_msgs::JointState::ConstPtr& msg) {
         latest_gui_ = *msg;
@@ -27,14 +25,33 @@ private:
         publishMerged();
     }
 
+    void leftCallback(const sensor_msgs::JointState::ConstPtr& msg) {
+        latest_left_ = *msg;
+        last_left_time_ = ros::Time::now();
+        publishMerged();
+    }
+
+    void rightCallback(const sensor_msgs::JointState::ConstPtr& msg) {
+        latest_right_ = *msg;
+        last_right_time_ = ros::Time::now();
+        publishMerged();
+    }
+
     void publishMerged() {
         std::map<std::string, double> joint_map;
 
-        for (size_t i = 0; i < latest_gui_.name.size(); ++i)
-            joint_map[latest_gui_.name[i]] = latest_gui_.position[i];
+        // 优先级顺序：GUI → Left → Right
+// 先写GUI（最低优先级）
+for (size_t i = 0; i < latest_gui_.name.size(); ++i)
+    joint_map[latest_gui_.name[i]] = latest_gui_.position[i];
 
-        for (size_t i = 0; i < latest_ik_.name.size(); ++i)
-            joint_map[latest_ik_.name[i]] = latest_ik_.position[i];
+// 再写Left，覆盖GUI相同关节
+for (size_t i = 0; i < latest_left_.name.size(); ++i)
+    joint_map[latest_left_.name[i]] = latest_left_.position[i];
+
+// 再写Right，覆盖GUI和Left相同关节
+for (size_t i = 0; i < latest_right_.name.size(); ++i)
+    joint_map[latest_right_.name[i]] = latest_right_.position[i];
 
         sensor_msgs::JointState merged;
         merged.header.stamp = ros::Time::now();
@@ -46,10 +63,6 @@ private:
 
         pub_.publish(merged);
     }
-
-    ros::NodeHandle nh_;
-    ros::Subscriber sub_ik_, sub_gui_;
-    ros::Publisher pub_;
 };
 
 int main(int argc, char** argv) {

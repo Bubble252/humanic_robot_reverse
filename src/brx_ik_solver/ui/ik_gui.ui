@@ -3,41 +3,142 @@
  <class>IKGui</class>
  <widget class="QWidget" name="IKGui">
   <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>544</width>
-    <height>264</height>
-   </rect>
+   <rect><x>0</x><y>0</y><width>600</width><height>500</height></rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+
+   <!-- Arm 1 -->
    <item>
-    <widget class="QDoubleSpinBox" name="xSpinBox"/>
-   </item>
-   <item>
-    <widget class="QDoubleSpinBox" name="ySpinBox"/>
-   </item>
-   <item>
-    <widget class="QDoubleSpinBox" name="zSpinBox"/>
-   </item>
-   <item>
-    <widget class="QDoubleSpinBox" name="rollSpinBox"/>
-   </item>
-   <item>
-    <widget class="QDoubleSpinBox" name="pitchSpinBox"/>
-   </item>
-   <item>
-    <widget class="QDoubleSpinBox" name="yawSpinBox"/>
-   </item>
-   <item>
-    <widget class="QPushButton" name="sendButton">
-     <property name="text">
-      <string>发送目标</string>
-     </property>
+    <widget class="QGroupBox" name="arm1GroupBox">
+     <property name="title"><string>Arm left Pose</string></property>
+     <layout class="QFormLayout" name="formLayout1">
+
+      <item row="0" column="0"><widget class="QLabel"><property name="text"><string>X</string></property></widget></item>
+      <item row="0" column="1">
+       <widget class="QDoubleSpinBox" name="xSpinBox1">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="1" column="0"><widget class="QLabel"><property name="text"><string>Y</string></property></widget></item>
+      <item row="1" column="1">
+       <widget class="QDoubleSpinBox" name="ySpinBox1">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="2" column="0"><widget class="QLabel"><property name="text"><string>Z</string></property></widget></item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="zSpinBox1">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="3" column="0"><widget class="QLabel"><property name="text"><string>Roll</string></property></widget></item>
+      <item row="3" column="1">
+       <widget class="QDoubleSpinBox" name="rollSpinBox1">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="4" column="0"><widget class="QLabel"><property name="text"><string>Pitch</string></property></widget></item>
+      <item row="4" column="1">
+       <widget class="QDoubleSpinBox" name="pitchSpinBox1">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="5" column="0"><widget class="QLabel"><property name="text"><string>Yaw</string></property></widget></item>
+      <item row="5" column="1">
+       <widget class="QDoubleSpinBox" name="yawSpinBox1">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+     </layout>
     </widget>
    </item>
+
+   <!-- Arm 2 -->
+   <item>
+    <widget class="QGroupBox" name="arm2GroupBox">
+     <property name="title"><string>Arm right Pose</string></property>
+     <layout class="QFormLayout" name="formLayout2">
+
+      <item row="0" column="0"><widget class="QLabel"><property name="text"><string>X</string></property></widget></item>
+      <item row="0" column="1">
+       <widget class="QDoubleSpinBox" name="xSpinBox2">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="1" column="0"><widget class="QLabel"><property name="text"><string>Y</string></property></widget></item>
+      <item row="1" column="1">
+       <widget class="QDoubleSpinBox" name="ySpinBox2">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="2" column="0"><widget class="QLabel"><property name="text"><string>Z</string></property></widget></item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="zSpinBox2">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="3" column="0"><widget class="QLabel"><property name="text"><string>Roll</string></property></widget></item>
+      <item row="3" column="1">
+       <widget class="QDoubleSpinBox" name="rollSpinBox2">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="4" column="0"><widget class="QLabel"><property name="text"><string>Pitch</string></property></widget></item>
+      <item row="4" column="1">
+       <widget class="QDoubleSpinBox" name="pitchSpinBox2">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+      <item row="5" column="0"><widget class="QLabel"><property name="text"><string>Yaw</string></property></widget></item>
+      <item row="5" column="1">
+       <widget class="QDoubleSpinBox" name="yawSpinBox2">
+        <property name="minimum"><double>-100.0</double></property>
+        <property name="maximum"><double>100.0</double></property>
+       </widget>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- Send Button -->
+   <item>
+    <widget class="QPushButton" name="sendButton_left">
+     <property name="text"><string>Set left Poses</string></property>
+    </widget>
+   </item>
+   
+   <item>
+    <widget class="QPushButton" name="sendButton_right">
+     <property name="text"><string>Set right Poses</string></property>
+    </widget>
+   </item>
+
   </layout>
  </widget>
  <resources/>
  <connections/>
 </ui>
+

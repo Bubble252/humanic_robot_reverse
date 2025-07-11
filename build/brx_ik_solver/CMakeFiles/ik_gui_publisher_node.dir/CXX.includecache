@@ -811,11 +811,7 @@ QApplication
 -
 QWidget
 -
-QVBoxLayout
--
-QDoubleSpinBox
--
-QPushButton
+QTimer
 -
 ros/ros.h
 -
@@ -823,8 +819,18 @@ geometry_msgs/PoseStamped.h
 -
 tf2/LinearMath/Quaternion.h
 -
+ui_ik_gui.h
+/root/arm/reverse_ws/src/brx_ik_solver/src/ui_ik_gui.h
 ik_gui_publisher_node.moc
 /root/arm/reverse_ws/src/brx_ik_solver/src/ik_gui_publisher_node.moc
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
+qtimer.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
+qvariant.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 QtCore/qglobal.h
@@ -866,6 +872,12 @@ QtCore/qatomic_bootstrap.h
 QtCore/qatomic_cxx11.h
 -
 QtCore/qatomic_msvc.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qbasictimer.h
+QtCore/qglobal.h
+-
+QtCore/qnamespace.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qbytearray.h
@@ -1436,6 +1448,16 @@ QtCore/qscopedpointer.h
 stdio.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qtimer.h
+QtCore/qglobal.h
+-
+QtCore/qbasictimer.h
+-
+QtCore/qobject.h
+-
+chrono
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
 QtCore/qglobal.h
 -
@@ -1890,6 +1912,22 @@ qapplication.h
 qspinbox.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qspinbox.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QFormLayout
+qformlayout.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qformlayout.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox
+qgroupbox.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgroupbox.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
+qlabel.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
+qlayout.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
 qpushbutton.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
@@ -1954,6 +1992,18 @@ QtWidgets/qtwidgetsglobal.h
 QtWidgets/qwidget.h
 -
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qformlayout.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/QLayout
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qframe.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qwidget.h
+-
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
 QtWidgets/qtwidgetsglobal.h
 -
@@ -1962,6 +2012,18 @@ QtWidgets/qlayout.h
 QtWidgets/qwidget.h
 -
 limits.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgroupbox.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qframe.h
+-
+
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
+QtWidgets/qtwidgetsglobal.h
+-
+QtWidgets/qframe.h
 -
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h
@@ -2058,5 +2120,25 @@ brx_ik_solver/ik_gui_publisher_node_autogen/include/ik_gui_publisher_node.moc
 QtCore/qbytearray.h
 -
 QtCore/qmetatype.h
+-
+
+brx_ik_solver/ik_gui_publisher_node_autogen/include/ui_ik_gui.h
+QtCore/QVariant
+-
+QtWidgets/QApplication
+-
+QtWidgets/QDoubleSpinBox
+-
+QtWidgets/QFormLayout
+-
+QtWidgets/QGroupBox
+-
+QtWidgets/QLabel
+-
+QtWidgets/QPushButton
+-
+QtWidgets/QVBoxLayout
+-
+QtWidgets/QWidget
 -
 

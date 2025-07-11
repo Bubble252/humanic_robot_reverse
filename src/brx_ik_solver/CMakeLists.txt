@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(brx_ik_solver)
 
-## 查找 ROS 和 Qt5 所需组件
+## ROS & Qt
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   urdf
@@ -13,28 +13,32 @@ find_package(catkin REQUIRED COMPONENTS
 
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
-## 启用 Qt 的自动 MOC 支持
+## Qt MOC/UIC
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_AUTOUIC ON)  # 如果你以后用 .ui 文件会用到
-set(CMAKE_AUTORCC ON)  # 若使用 .qrc 资源文件也需要
-set(CMAKE_INCLUDE_CURRENT_DIR ON)  # 为 MOC/UIC 提供当前路径
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTORCC ON)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/ui)
 
-## 声明 catkin 包
+## catkin
 catkin_package()
 
-## 包含头文件目录
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
   ${Qt5Widgets_INCLUDE_DIRS}
 )
 
-## IK求解节点
+## IK Solver Node
 add_executable(ik_solver_node src/ik_solver_node.cpp)
 target_link_libraries(ik_solver_node ${catkin_LIBRARIES})
 
-## GUI发布节点（包含 Q_OBJECT、信号槽）
-add_executable(ik_gui_publisher_node src/ik_gui_publisher_node.cpp)
+## IK GUI Node
+add_executable(ik_gui_publisher_node
+  src/ik_gui_publisher_node.cpp
+  ui/ik_gui.ui
+)
+
 target_link_libraries(ik_gui_publisher_node
   ${catkin_LIBRARIES}
   Qt5::Widgets

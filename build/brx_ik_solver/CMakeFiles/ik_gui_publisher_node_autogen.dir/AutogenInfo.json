@@ -77,7 +77,7 @@
 		]
 	],
 	"UIC_OPTIONS" : [],
-	"UIC_SEARCH_PATHS" : [],
+	"UIC_SEARCH_PATHS" : [ "/root/arm/reverse_ws/src/brx_ik_solver/ui" ],
 	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0
