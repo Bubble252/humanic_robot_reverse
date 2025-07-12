@@ -1,0 +1,13 @@
+FROM osrf/ros:noetic-desktop-full
+
+# 安装常用依赖
+RUN apt update && apt install -y \
+    ros-noetic-kdl-parser \
+    ros-noetic-kdl-conversions \
+    ros-noetic-tf-conversions \
+    ros-noetic-joint-state-publisher-gui \
+    ros-noetic-rviz \
+    build-essential \
+    git \
+    nano
+
