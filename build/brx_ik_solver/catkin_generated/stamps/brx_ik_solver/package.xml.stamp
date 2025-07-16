@@ -10,19 +10,19 @@
   <!-- 构建工具 -->
   <buildtool_depend>catkin</buildtool_depend>
 
-  <!-- ROS构建依赖 -->
+  <!-- 构建依赖（C++/ROS/Msg/Qt） -->
   <build_depend>roscpp</build_depend>
   <build_depend>geometry_msgs</build_depend>
   <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
   <build_depend>urdf</build_depend>
   <build_depend>kdl_parser</build_depend>
   <build_depend>tf</build_depend>
-
-  <!-- Qt构建依赖 -->
+  <build_depend>message_generation</build_depend>
   <build_depend>qtbase5-dev</build_depend>
   <build_depend>qttools5-dev-tools</build_depend>
 
-  <!-- 构建导出依赖 -->
+  <!-- 安装导出依赖（用于编译其他包时） -->
   <build_export_depend>qtbase5-dev</build_export_depend>
   <build_export_depend>qttools5-dev-tools</build_export_depend>
 
@@ -30,10 +30,17 @@
   <exec_depend>roscpp</exec_depend>
   <exec_depend>geometry_msgs</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
   <exec_depend>urdf</exec_depend>
   <exec_depend>kdl_parser</exec_depend>
   <exec_depend>tf</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
   <exec_depend>libqt5widgets5</exec_depend>
+  
+  
+  <build_depend>trac_ik_lib</build_depend>
+  <exec_depend>trac_ik_lib</exec_depend>
+
 
   <export></export>
 </package>

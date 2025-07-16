@@ -3,137 +3,128 @@
  <class>IKGui</class>
  <widget class="QWidget" name="IKGui">
   <property name="geometry">
-   <rect><x>0</x><y>0</y><width>600</width><height>500</height></rect>
+   <rect><x>0</x><y>0</y><width>1000</width><height>700</height></rect>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
 
-   <!-- Arm 1 -->
+   <!-- Arm 1 Pose Input -->
    <item>
     <widget class="QGroupBox" name="arm1GroupBox">
-     <property name="title"><string>Arm left Pose</string></property>
+     <property name="title"><string>Arm Left Pose</string></property>
      <layout class="QFormLayout" name="formLayout1">
-
       <item row="0" column="0"><widget class="QLabel"><property name="text"><string>X</string></property></widget></item>
-      <item row="0" column="1">
-       <widget class="QDoubleSpinBox" name="xSpinBox1">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="0" column="1"><widget class="QDoubleSpinBox" name="xSpinBox1"/></item>
       <item row="1" column="0"><widget class="QLabel"><property name="text"><string>Y</string></property></widget></item>
-      <item row="1" column="1">
-       <widget class="QDoubleSpinBox" name="ySpinBox1">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="1" column="1"><widget class="QDoubleSpinBox" name="ySpinBox1"/></item>
       <item row="2" column="0"><widget class="QLabel"><property name="text"><string>Z</string></property></widget></item>
-      <item row="2" column="1">
-       <widget class="QDoubleSpinBox" name="zSpinBox1">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="2" column="1"><widget class="QDoubleSpinBox" name="zSpinBox1"/></item>
       <item row="3" column="0"><widget class="QLabel"><property name="text"><string>Roll</string></property></widget></item>
-      <item row="3" column="1">
-       <widget class="QDoubleSpinBox" name="rollSpinBox1">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="3" column="1"><widget class="QDoubleSpinBox" name="rollSpinBox1"/></item>
       <item row="4" column="0"><widget class="QLabel"><property name="text"><string>Pitch</string></property></widget></item>
-      <item row="4" column="1">
-       <widget class="QDoubleSpinBox" name="pitchSpinBox1">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="4" column="1"><widget class="QDoubleSpinBox" name="pitchSpinBox1"/></item>
       <item row="5" column="0"><widget class="QLabel"><property name="text"><string>Yaw</string></property></widget></item>
-      <item row="5" column="1">
-       <widget class="QDoubleSpinBox" name="yawSpinBox1">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="5" column="1"><widget class="QDoubleSpinBox" name="yawSpinBox1"/></item>
      </layout>
     </widget>
    </item>
 
-   <!-- Arm 2 -->
+   <!-- Arm 2 Pose Input -->
    <item>
     <widget class="QGroupBox" name="arm2GroupBox">
-     <property name="title"><string>Arm right Pose</string></property>
+     <property name="title"><string>Arm Right Pose</string></property>
      <layout class="QFormLayout" name="formLayout2">
-
       <item row="0" column="0"><widget class="QLabel"><property name="text"><string>X</string></property></widget></item>
-      <item row="0" column="1">
-       <widget class="QDoubleSpinBox" name="xSpinBox2">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="0" column="1"><widget class="QDoubleSpinBox" name="xSpinBox2"/></item>
       <item row="1" column="0"><widget class="QLabel"><property name="text"><string>Y</string></property></widget></item>
-      <item row="1" column="1">
-       <widget class="QDoubleSpinBox" name="ySpinBox2">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="1" column="1"><widget class="QDoubleSpinBox" name="ySpinBox2"/></item>
       <item row="2" column="0"><widget class="QLabel"><property name="text"><string>Z</string></property></widget></item>
-      <item row="2" column="1">
-       <widget class="QDoubleSpinBox" name="zSpinBox2">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="2" column="1"><widget class="QDoubleSpinBox" name="zSpinBox2"/></item>
       <item row="3" column="0"><widget class="QLabel"><property name="text"><string>Roll</string></property></widget></item>
-      <item row="3" column="1">
-       <widget class="QDoubleSpinBox" name="rollSpinBox2">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="3" column="1"><widget class="QDoubleSpinBox" name="rollSpinBox2"/></item>
       <item row="4" column="0"><widget class="QLabel"><property name="text"><string>Pitch</string></property></widget></item>
-      <item row="4" column="1">
-       <widget class="QDoubleSpinBox" name="pitchSpinBox2">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="4" column="1"><widget class="QDoubleSpinBox" name="pitchSpinBox2"/></item>
       <item row="5" column="0"><widget class="QLabel"><property name="text"><string>Yaw</string></property></widget></item>
-      <item row="5" column="1">
-       <widget class="QDoubleSpinBox" name="yawSpinBox2">
-        <property name="minimum"><double>-100.0</double></property>
-        <property name="maximum"><double>100.0</double></property>
-       </widget>
-      </item>
-
+      <item row="5" column="1"><widget class="QDoubleSpinBox" name="yawSpinBox2"/></item>
      </layout>
     </widget>
    </item>
 
-   <!-- Send Button -->
+   <!-- Joint Control Panels -->
    <item>
-    <widget class="QPushButton" name="sendButton_left">
-     <property name="text"><string>Set left Poses</string></property>
+    <widget class="QGroupBox" name="jointControlBox">
+     <property name="title"><string>Joint Control (14 joints)</string></property>
+     <layout class="QGridLayout" name="jointGridLayout">
+      <!-- 14 joints in two columns: Left (1-7), Right (8-14) -->
+      <!-- Each block: QLabel, QDoubleSpinBox, QCheckBox -->
+      <!-- Compact 2-column layout -->
+      <!-- Left Arm -->
+      <item row="0" column="0"><widget class="QLabel"><property name="text"><string>L-Joint 1</string></property></widget></item>
+      <item row="0" column="1"><widget class="QDoubleSpinBox" name="jointSpinBox_1"/></item>
+      <item row="0" column="2"><widget class="QCheckBox" name="jointLock_1"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="1" column="0"><widget class="QLabel"><property name="text"><string>L-Joint 2</string></property></widget></item>
+      <item row="1" column="1"><widget class="QDoubleSpinBox" name="jointSpinBox_2"/></item>
+      <item row="1" column="2"><widget class="QCheckBox" name="jointLock_2"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="2" column="0"><widget class="QLabel"><property name="text"><string>L-Joint 3</string></property></widget></item>
+      <item row="2" column="1"><widget class="QDoubleSpinBox" name="jointSpinBox_3"/></item>
+      <item row="2" column="2"><widget class="QCheckBox" name="jointLock_3"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="3" column="0"><widget class="QLabel"><property name="text"><string>L-Joint 4</string></property></widget></item>
+      <item row="3" column="1"><widget class="QDoubleSpinBox" name="jointSpinBox_4"/></item>
+      <item row="3" column="2"><widget class="QCheckBox" name="jointLock_4"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="4" column="0"><widget class="QLabel"><property name="text"><string>L-Joint 5</string></property></widget></item>
+      <item row="4" column="1"><widget class="QDoubleSpinBox" name="jointSpinBox_5"/></item>
+      <item row="4" column="2"><widget class="QCheckBox" name="jointLock_5"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="5" column="0"><widget class="QLabel"><property name="text"><string>L-Joint 6</string></property></widget></item>
+      <item row="5" column="1"><widget class="QDoubleSpinBox" name="jointSpinBox_6"/></item>
+      <item row="5" column="2"><widget class="QCheckBox" name="jointLock_6"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="6" column="0"><widget class="QLabel"><property name="text"><string>L-Joint 7</string></property></widget></item>
+      <item row="6" column="1"><widget class="QDoubleSpinBox" name="jointSpinBox_7"/></item>
+      <item row="6" column="2"><widget class="QCheckBox" name="jointLock_7"><property name="text"><string>Lock</string></property></widget></item>
+      <!-- Right Arm -->
+      <item row="0" column="3"><widget class="QLabel"><property name="text"><string>R-Joint 1</string></property></widget></item>
+      <item row="0" column="4"><widget class="QDoubleSpinBox" name="jointSpinBox_8"/></item>
+      <item row="0" column="5"><widget class="QCheckBox" name="jointLock_8"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="1" column="3"><widget class="QLabel"><property name="text"><string>R-Joint 2</string></property></widget></item>
+      <item row="1" column="4"><widget class="QDoubleSpinBox" name="jointSpinBox_9"/></item>
+      <item row="1" column="5"><widget class="QCheckBox" name="jointLock_9"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="2" column="3"><widget class="QLabel"><property name="text"><string>R-Joint 3</string></property></widget></item>
+      <item row="2" column="4"><widget class="QDoubleSpinBox" name="jointSpinBox_10"/></item>
+      <item row="2" column="5"><widget class="QCheckBox" name="jointLock_10"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="3" column="3"><widget class="QLabel"><property name="text"><string>R-Joint 4</string></property></widget></item>
+      <item row="3" column="4"><widget class="QDoubleSpinBox" name="jointSpinBox_11"/></item>
+      <item row="3" column="5"><widget class="QCheckBox" name="jointLock_11"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="4" column="3"><widget class="QLabel"><property name="text"><string>R-Joint 5</string></property></widget></item>
+      <item row="4" column="4"><widget class="QDoubleSpinBox" name="jointSpinBox_12"/></item>
+      <item row="4" column="5"><widget class="QCheckBox" name="jointLock_12"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="5" column="3"><widget class="QLabel"><property name="text"><string>R-Joint 6</string></property></widget></item>
+      <item row="5" column="4"><widget class="QDoubleSpinBox" name="jointSpinBox_13"/></item>
+      <item row="5" column="5"><widget class="QCheckBox" name="jointLock_13"><property name="text"><string>Lock</string></property></widget></item>
+      <item row="6" column="3"><widget class="QLabel"><property name="text"><string>R-Joint 7</string></property></widget></item>
+      <item row="6" column="4"><widget class="QDoubleSpinBox" name="jointSpinBox_14"/></item>
+      <item row="6" column="5"><widget class="QCheckBox" name="jointLock_14"><property name="text"><string>Lock</string></property></widget></item>
+     </layout>
     </widget>
    </item>
-   
+
+   <!-- Solve Type Selection -->
    <item>
-    <widget class="QPushButton" name="sendButton_right">
-     <property name="text"><string>Set right Poses</string></property>
-    </widget>
+    <layout class="QHBoxLayout">
+     <item><widget class="QLabel"><property name="text"><string>Solve Type:</string></property></widget></item>
+     <item>
+      <widget class="QComboBox" name="solveTypeCombo">
+       <item><property name="text"><string>Speed</string></property></item>
+       <item><property name="text"><string>Distance</string></property></item>
+       <item><property name="text"><string>Manipulation1</string></property></item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Send Buttons -->
+   <item>
+    <layout class="QHBoxLayout">
+     <item><widget class="QPushButton" name="sendButton_left"><property name="text"><string>Set Left Pose</string></property></widget></item>
+     <item><widget class="QPushButton" name="sendButton_right"><property name="text"><string>Set Right Pose</string></property></widget></item>
+    </layout>
    </item>
 
   </layout>
@@ -141,4 +132,3 @@
  <resources/>
  <connections/>
 </ui>
-

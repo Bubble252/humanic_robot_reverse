@@ -146,10 +146,15 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/root/arm/reverse_ws/build/gtest/cmake_install.cmake")
+  include("/root/arm/reverse_ws/build/trac_ik/trac_ik/cmake_install.cmake")
   include("/root/arm/reverse_ws/build/reverse_bringup/cmake_install.cmake")
   include("/root/arm/reverse_ws/build/joint_state_merger/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/brx_ik_solver/cmake_install.cmake")
   include("/root/arm/reverse_ws/build/BRX042501/cmake_install.cmake")
+  include("/root/arm/reverse_ws/build/trac_ik/trac_ik_lib/cmake_install.cmake")
+  include("/root/arm/reverse_ws/build/brx_ik_solver/cmake_install.cmake")
+  include("/root/arm/reverse_ws/build/trac_ik/trac_ik_examples/cmake_install.cmake")
+  include("/root/arm/reverse_ws/build/trac_ik/trac_ik_kinematics_plugin/cmake_install.cmake")
+  include("/root/arm/reverse_ws/build/trac_ik/trac_ik_python/cmake_install.cmake")
 
 endif()
 

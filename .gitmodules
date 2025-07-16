@@ -1,0 +1,3 @@
+[submodule "src/trac_ik"]
+	path = src/trac_ik
+	url = https://github.com/ros-industrial/trac_ik.git

@@ -25,6 +25,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "brx_ik_solver"
   "/root/arm/reverse_ws/src/brx_ik_solver"
   "brx_ik_solver/ik_gui_publisher_node_autogen/include"
+  "/root/arm/reverse_ws/devel/include"
   "/root/arm/reverse_ws/src/brx_ik_solver/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"

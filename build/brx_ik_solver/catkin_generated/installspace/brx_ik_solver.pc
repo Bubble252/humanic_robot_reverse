@@ -3,6 +3,6 @@ prefix=/root/arm/reverse_ws/install
 Name: brx_ik_solver
 Description: Description of brx_ik_solver
 Version: 0.0.0
-Cflags: 
+Cflags: -I${prefix}/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_runtime std_msgs sensor_msgs geometry_msgs urdf tf kdl_parser trac_ik_lib

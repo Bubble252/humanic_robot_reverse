@@ -4,6 +4,7 @@
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/ik_solver_node_autogen/mocs_compilation.cpp.o: brx_ik_solver/ik_solver_node_autogen/mocs_compilation.cpp
 
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point32.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/PointStamped.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Pose.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/PoseStamped.h
@@ -11,6 +12,8 @@ brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/n
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/QuaternionStamped.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Transform.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/TransformStamped.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Twist.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/TwistStamped.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Vector3Stamped.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/kdl_parser/kdl_parser.hpp
@@ -19,6 +22,8 @@ brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/n
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/advertise_service_options.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/assert.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/builtin_message_traits.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/callback_queue.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/callback_queue_interface.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/common.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/console.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/console_backend.h
@@ -71,8 +76,14 @@ brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/n
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/wall_timer.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/ros/wall_timer_options.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/rosconsole/macros_generated.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/sensor_msgs/ChannelFloat32.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/sensor_msgs/JointState.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/sensor_msgs/PointCloud.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/std_msgs/Empty.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/std_msgs/Header.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/FrameGraph.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/FrameGraphRequest.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/FrameGraphResponse.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/LinearMath/Matrix3x3.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/LinearMath/MinMax.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/LinearMath/QuadWord.h
@@ -80,11 +91,35 @@ brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/n
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/LinearMath/Scalar.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/LinearMath/Transform.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/LinearMath/Vector3.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/exceptions.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/tf.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/tfMessage.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/time_cache.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/transform_datatypes.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf/transform_listener.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/Quaternion.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/Vector3.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2/buffer_core.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2/convert.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2/exceptions.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2/impl/convert.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2/transform_datatypes.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2/transform_storage.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2_msgs/FrameGraph.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2_msgs/FrameGraphRequest.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2_msgs/FrameGraphResponse.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2_msgs/TFMessage.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2_ros/buffer.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2_ros/buffer_interface.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/tf2_ros/transform_listener.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/trac_ik/kdl_tl.hpp
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/trac_ik/nlopt_ik.hpp
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/trac_ik/trac_ik.hpp
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/urdf/model.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/urdf/urdfdom_compatibility.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/urdf/visibility_control.hpp
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /root/arm/reverse_ws/devel/include/brx_ik_solver/IkControlInput.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /root/arm/reverse_ws/src/brx_ik_solver/src/ik_solver_node.cpp
 
