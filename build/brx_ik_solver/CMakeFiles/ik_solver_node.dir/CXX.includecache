@@ -1523,10 +1523,10 @@ kdl/frames.hpp
 -
 kdl/chainiksolverpos_lma.hpp
 -
-kdl/chainiksolvervel_pinv.hpp
--
 kdl/chainfksolverpos_recursive.hpp
 -
 kdl_parser/kdl_parser.hpp
+-
+algorithm
 -
 
