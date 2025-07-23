@@ -43,30 +43,30 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/arm/reverse_ws/src
+CMAKE_SOURCE_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
+CMAKE_BINARY_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/build
 
 # Utility rule file for brx_ik_solver_generate_messages_nodejs.
 
 # Include the progress variables for this target.
 include brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/progress.make
 
-brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs: /root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js
+brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs: /home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js
 
 
-/root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
-/root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /root/arm/reverse_ws/src/brx_ik_solver/msg/IkControlInput.msg
-/root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/arm/reverse_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from brx_ik_solver/IkControlInput.msg"
-	cd /root/arm/reverse_ws/build/brx_ik_solver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /root/arm/reverse_ws/src/brx_ik_solver/msg/IkControlInput.msg -Ibrx_ik_solver:/root/arm/reverse_ws/src/brx_ik_solver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p brx_ik_solver -o /root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg
+/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/msg/IkControlInput.msg
+/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bubble/桌面/arm/humanic_robot_reverse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from brx_ik_solver/IkControlInput.msg"
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/msg/IkControlInput.msg -Ibrx_ik_solver:/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -p brx_ik_solver -o /home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg
 
 brx_ik_solver_generate_messages_nodejs: brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs
-brx_ik_solver_generate_messages_nodejs: /root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js
+brx_ik_solver_generate_messages_nodejs: /home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js
 brx_ik_solver_generate_messages_nodejs: brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/build.make
 
 .PHONY : brx_ik_solver_generate_messages_nodejs
@@ -77,10 +77,10 @@ brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/build: brx_i
 .PHONY : brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/build
 
 brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/clean:
-	cd /root/arm/reverse_ws/build/brx_ik_solver && $(CMAKE_COMMAND) -P CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver && $(CMAKE_COMMAND) -P CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/clean
 
 brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/depend:
-	cd /root/arm/reverse_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/arm/reverse_ws/src /root/arm/reverse_ws/src/brx_ik_solver /root/arm/reverse_ws/build /root/arm/reverse_ws/build/brx_ik_solver /root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bubble/桌面/arm/humanic_robot_reverse/src /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/build /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : brx_ik_solver/CMakeFiles/brx_ik_solver_generate_messages_nodejs.dir/depend
 

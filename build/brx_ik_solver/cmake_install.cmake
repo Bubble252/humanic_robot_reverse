@@ -1,8 +1,8 @@
-# Install script for directory: /root/arm/reverse_ws/src/brx_ik_solver
+# Install script for directory: /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/arm/reverse_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bubble/桌面/arm/humanic_robot_reverse/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver/msg" TYPE FILE FILES "/root/arm/reverse_ws/src/brx_ik_solver/msg/IkControlInput.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver/msg" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/msg/IkControlInput.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver/cmake" TYPE FILE FILES "/root/arm/reverse_ws/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solver-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver/cmake" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solver-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/root/arm/reverse_ws/devel/include/brx_ik_solver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/devel/include/brx_ik_solver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/root/arm/reverse_ws/devel/share/roseus/ros/brx_ik_solver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/roseus/ros/brx_ik_solver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/root/arm/reverse_ws/devel/share/common-lisp/ros/brx_ik_solver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/common-lisp/ros/brx_ik_solver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/root/arm/reverse_ws/devel/lib/python3/dist-packages/brx_ik_solver")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/bubble/桌面/arm/humanic_robot_reverse/devel/lib/python3/dist-packages/brx_ik_solver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/root/arm/reverse_ws/devel/lib/python3/dist-packages/brx_ik_solver")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/devel/lib/python3/dist-packages/brx_ik_solver")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/arm/reverse_ws/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solver.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solver.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver/cmake" TYPE FILE FILES "/root/arm/reverse_ws/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solver-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver/cmake" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solver-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver/cmake" TYPE FILE FILES
-    "/root/arm/reverse_ws/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solverConfig.cmake"
-    "/root/arm/reverse_ws/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solverConfig-version.cmake"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solverConfig.cmake"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/catkin_generated/installspace/brx_ik_solverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver" TYPE FILE FILES "/root/arm/reverse_ws/src/brx_ik_solver/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/brx_ik_solver" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/package.xml")
 endif()
 

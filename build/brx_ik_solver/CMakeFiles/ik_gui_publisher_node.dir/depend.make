@@ -3,6 +3,8 @@
 
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/ik_gui_publisher_node_autogen/mocs_compilation.cpp.o: brx_ik_solver/ik_gui_publisher_node_autogen/mocs_compilation.cpp
 
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /home/bubble/桌面/arm/humanic_robot_reverse/devel/include/brx_ik_solver/IkControlInput.h
+brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Pose.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/PoseStamped.h
@@ -72,8 +74,6 @@ brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /opt/ros/noetic/include/tf2/LinearMath/Vector3.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
-brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /root/arm/reverse_ws/devel/include/brx_ik_solver/IkControlInput.h
-brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /root/arm/reverse_ws/src/brx_ik_solver/src/ik_gui_publisher_node.cpp
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
 brx_ik_solver/CMakeFiles/ik_gui_publisher_node.dir/src/ik_gui_publisher_node.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant

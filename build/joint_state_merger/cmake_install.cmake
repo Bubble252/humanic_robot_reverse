@@ -1,8 +1,8 @@
-# Install script for directory: /root/arm/reverse_ws/src/joint_state_merger
+# Install script for directory: /home/bubble/桌面/arm/humanic_robot_reverse/src/joint_state_merger
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/arm/reverse_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bubble/桌面/arm/humanic_robot_reverse/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/arm/reverse_ws/build/joint_state_merger/catkin_generated/installspace/joint_state_merger.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/joint_state_merger/catkin_generated/installspace/joint_state_merger.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_merger/cmake" TYPE FILE FILES
-    "/root/arm/reverse_ws/build/joint_state_merger/catkin_generated/installspace/joint_state_mergerConfig.cmake"
-    "/root/arm/reverse_ws/build/joint_state_merger/catkin_generated/installspace/joint_state_mergerConfig-version.cmake"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/joint_state_merger/catkin_generated/installspace/joint_state_mergerConfig.cmake"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/joint_state_merger/catkin_generated/installspace/joint_state_mergerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_merger" TYPE FILE FILES "/root/arm/reverse_ws/src/joint_state_merger/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/joint_state_merger" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/joint_state_merger/package.xml")
 endif()
 

@@ -1,4 +1,4 @@
-prefix=/root/arm/reverse_ws/install
+prefix=/home/bubble/桌面/arm/humanic_robot_reverse/install
 
 Name: BRX042501
 Description: Description of BRX042501

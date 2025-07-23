@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/arm/reverse_ws/devel/lib/python3/dist-packages/brx_ik_solver/msg/_IkControlInput.py"
-  "/root/arm/reverse_ws/devel/lib/python3/dist-packages/brx_ik_solver/msg/__init__.py"
+  "/home/bubble/桌面/arm/humanic_robot_reverse/devel/lib/python3/dist-packages/brx_ik_solver/msg/_IkControlInput.py"
+  "/home/bubble/桌面/arm/humanic_robot_reverse/devel/lib/python3/dist-packages/brx_ik_solver/msg/__init__.py"
   "CMakeFiles/brx_ik_solver_generate_messages_py"
 )
 

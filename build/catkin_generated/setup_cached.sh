@@ -7,7 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/root/arm/reverse_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu'
-export PKG_CONFIG_PATH='/root/arm/reverse_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig'
-export PWD='/root/arm/reverse_ws/build'
-export PYTHONPATH="/root/arm/reverse_ws/devel/lib/python3/dist-packages:$PYTHONPATH"
+export CMAKE_PREFIX_PATH="/home/bubble/桌面/arm/humanic_robot_reverse/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu'
+export PKG_CONFIG_PATH='/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig'
+export PWD='/home/bubble/桌面/arm/humanic_robot_reverse/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/bubble/桌面/arm/humanic_robot_reverse/src:$ROS_PACKAGE_PATH"

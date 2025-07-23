@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/arm/reverse_ws/devel/share/roseus/ros/brx_ik_solver/manifest.l"
-  "/root/arm/reverse_ws/devel/share/roseus/ros/brx_ik_solver/msg/IkControlInput.l"
+  "/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/roseus/ros/brx_ik_solver/manifest.l"
+  "/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/roseus/ros/brx_ik_solver/msg/IkControlInput.l"
   "CMakeFiles/brx_ik_solver_generate_messages_eus"
 )
 

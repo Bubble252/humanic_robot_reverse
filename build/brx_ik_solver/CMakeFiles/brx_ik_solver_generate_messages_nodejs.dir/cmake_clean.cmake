@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/root/arm/reverse_ws/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js"
+  "/home/bubble/桌面/arm/humanic_robot_reverse/devel/share/gennodejs/ros/brx_ik_solver/msg/IkControlInput.js"
   "CMakeFiles/brx_ik_solver_generate_messages_nodejs"
 )
 

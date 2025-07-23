@@ -67,14 +67,14 @@ set(reverse_bringup_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(reverse_bringup_SOURCE_PREFIX /root/arm/reverse_ws/src/reverse_bringup)
-  set(reverse_bringup_DEVEL_PREFIX /root/arm/reverse_ws/devel)
+  set(reverse_bringup_SOURCE_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/src/reverse_bringup)
+  set(reverse_bringup_DEVEL_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/devel)
   set(reverse_bringup_INSTALL_PREFIX "")
   set(reverse_bringup_PREFIX ${reverse_bringup_DEVEL_PREFIX})
 else()
   set(reverse_bringup_SOURCE_PREFIX "")
   set(reverse_bringup_DEVEL_PREFIX "")
-  set(reverse_bringup_INSTALL_PREFIX /root/arm/reverse_ws/install)
+  set(reverse_bringup_INSTALL_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/install)
   set(reverse_bringup_PREFIX ${reverse_bringup_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/arm/reverse_ws/install/lib;/root/arm/reverse_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/bubble/桌面/arm/humanic_robot_reverse/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

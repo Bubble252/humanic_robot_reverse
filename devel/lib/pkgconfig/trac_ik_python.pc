@@ -1,8 +1,0 @@
-prefix=/root/arm/reverse_ws/devel
-
-Name: trac_ik_python
-Description: Description of trac_ik_python
-Version: 1.6.6
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

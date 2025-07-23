@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/arm/reverse_ws/src
+CMAKE_SOURCE_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
+CMAKE_BINARY_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/build
 
 # Utility rule file for actionlib_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ brx_ik_solver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build: actionli
 .PHONY : brx_ik_solver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 
 brx_ik_solver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
-	cd /root/arm/reverse_ws/build/brx_ik_solver && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : brx_ik_solver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
 
 brx_ik_solver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend:
-	cd /root/arm/reverse_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/arm/reverse_ws/src /root/arm/reverse_ws/src/brx_ik_solver /root/arm/reverse_ws/build /root/arm/reverse_ws/build/brx_ik_solver /root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bubble/桌面/arm/humanic_robot_reverse/src /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/build /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : brx_ik_solver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
 

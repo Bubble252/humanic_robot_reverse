@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS =  
 
-CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_DATE_TIME_DYN_LINK -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"brx_ik_solver\"
+CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"brx_ik_solver\"
 
-CXX_INCLUDES = -I/root/arm/reverse_ws/build/brx_ik_solver -I/root/arm/reverse_ws/src/brx_ik_solver -I/root/arm/reverse_ws/build/brx_ik_solver/ik_solver_node_autogen/include -I/root/arm/reverse_ws/devel/include -I/root/arm/reverse_ws/src/brx_ik_solver/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
+CXX_INCLUDES = -I/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver -I/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver -I/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/ik_solver_node_autogen/include -I/home/bubble/桌面/arm/humanic_robot_reverse/devel/include -I/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ 
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/arm/reverse_ws/devel/lib/joint_state_merger/joint_state_merger_node"
-  "/root/arm/reverse_ws/devel/lib/joint_state_merger/joint_state_merger_node.pdb"
+  "/home/bubble/桌面/arm/humanic_robot_reverse/devel/lib/joint_state_merger/joint_state_merger_node"
+  "/home/bubble/桌面/arm/humanic_robot_reverse/devel/lib/joint_state_merger/joint_state_merger_node.pdb"
   "CMakeFiles/joint_state_merger_node.dir/src/joint_state_merger_node.cpp.o"
 )
 

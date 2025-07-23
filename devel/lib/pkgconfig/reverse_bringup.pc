@@ -1,4 +1,4 @@
-prefix=/root/arm/reverse_ws/devel
+prefix=/home/bubble/桌面/arm/humanic_robot_reverse/devel
 
 Name: reverse_bringup
 Description: Description of reverse_bringup

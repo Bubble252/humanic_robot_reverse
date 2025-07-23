@@ -67,14 +67,14 @@ set(joint_state_merger_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(joint_state_merger_SOURCE_PREFIX /root/arm/reverse_ws/src/joint_state_merger)
-  set(joint_state_merger_DEVEL_PREFIX /root/arm/reverse_ws/devel)
+  set(joint_state_merger_SOURCE_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/src/joint_state_merger)
+  set(joint_state_merger_DEVEL_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/devel)
   set(joint_state_merger_INSTALL_PREFIX "")
   set(joint_state_merger_PREFIX ${joint_state_merger_DEVEL_PREFIX})
 else()
   set(joint_state_merger_SOURCE_PREFIX "")
   set(joint_state_merger_DEVEL_PREFIX "")
-  set(joint_state_merger_INSTALL_PREFIX /root/arm/reverse_ws/install)
+  set(joint_state_merger_INSTALL_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/install)
   set(joint_state_merger_PREFIX ${joint_state_merger_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/arm/reverse_ws/install/lib;/root/arm/reverse_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/bubble/桌面/arm/humanic_robot_reverse/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/arm/reverse_ws/src
+CMAKE_SOURCE_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
+CMAKE_BINARY_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/build
 
 # Utility rule file for std_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ reverse_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/build: std_msgs_ge
 .PHONY : reverse_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 
 reverse_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	cd /root/arm/reverse_ws/build/reverse_bringup && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/reverse_bringup && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : reverse_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 reverse_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend:
-	cd /root/arm/reverse_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/arm/reverse_ws/src /root/arm/reverse_ws/src/reverse_bringup /root/arm/reverse_ws/build /root/arm/reverse_ws/build/reverse_bringup /root/arm/reverse_ws/build/reverse_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bubble/桌面/arm/humanic_robot_reverse/src /home/bubble/桌面/arm/humanic_robot_reverse/src/reverse_bringup /home/bubble/桌面/arm/humanic_robot_reverse/build /home/bubble/桌面/arm/humanic_robot_reverse/build/reverse_bringup /home/bubble/桌面/arm/humanic_robot_reverse/build/reverse_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : reverse_bringup/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
 

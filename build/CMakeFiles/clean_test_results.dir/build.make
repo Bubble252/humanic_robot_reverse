@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/arm/reverse_ws/src
+CMAKE_SOURCE_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
+CMAKE_BINARY_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/build
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /root/arm/reverse_ws/build/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/bubble/桌面/arm/humanic_robot_reverse/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /root/arm/reverse_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/arm/reverse_ws/src /root/arm/reverse_ws/src /root/arm/reverse_ws/build /root/arm/reverse_ws/build /root/arm/reverse_ws/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bubble/桌面/arm/humanic_robot_reverse/src /home/bubble/桌面/arm/humanic_robot_reverse/src /home/bubble/桌面/arm/humanic_robot_reverse/build /home/bubble/桌面/arm/humanic_robot_reverse/build /home/bubble/桌面/arm/humanic_robot_reverse/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

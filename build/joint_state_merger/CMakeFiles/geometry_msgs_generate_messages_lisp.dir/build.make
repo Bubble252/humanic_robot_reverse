@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/arm/reverse_ws/src
+CMAKE_SOURCE_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
+CMAKE_BINARY_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/build
 
 # Utility rule file for geometry_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ joint_state_merger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build: ge
 .PHONY : joint_state_merger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 
 joint_state_merger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	cd /root/arm/reverse_ws/build/joint_state_merger && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/joint_state_merger && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : joint_state_merger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 joint_state_merger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend:
-	cd /root/arm/reverse_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/arm/reverse_ws/src /root/arm/reverse_ws/src/joint_state_merger /root/arm/reverse_ws/build /root/arm/reverse_ws/build/joint_state_merger /root/arm/reverse_ws/build/joint_state_merger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bubble/桌面/arm/humanic_robot_reverse/src /home/bubble/桌面/arm/humanic_robot_reverse/src/joint_state_merger /home/bubble/桌面/arm/humanic_robot_reverse/build /home/bubble/桌面/arm/humanic_robot_reverse/build/joint_state_merger /home/bubble/桌面/arm/humanic_robot_reverse/build/joint_state_merger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : joint_state_merger/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /root/arm/reverse_ws/src
+# Install script for directory: /home/bubble/桌面/arm/humanic_robot_reverse/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/arm/reverse_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bubble/桌面/arm/humanic_robot_reverse/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,112 +49,107 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/arm/reverse_ws/install/_setup_util.py")
+   "/home/bubble/桌面/arm/humanic_robot_reverse/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/arm/reverse_ws/install" TYPE PROGRAM FILES "/root/arm/reverse_ws/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/bubble/桌面/arm/humanic_robot_reverse/install" TYPE PROGRAM FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/arm/reverse_ws/install/env.sh")
+   "/home/bubble/桌面/arm/humanic_robot_reverse/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/arm/reverse_ws/install" TYPE PROGRAM FILES "/root/arm/reverse_ws/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/bubble/桌面/arm/humanic_robot_reverse/install" TYPE PROGRAM FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/arm/reverse_ws/install/setup.bash;/root/arm/reverse_ws/install/local_setup.bash")
+   "/home/bubble/桌面/arm/humanic_robot_reverse/install/setup.bash;/home/bubble/桌面/arm/humanic_robot_reverse/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/arm/reverse_ws/install" TYPE FILE FILES
-    "/root/arm/reverse_ws/build/catkin_generated/installspace/setup.bash"
-    "/root/arm/reverse_ws/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/bubble/桌面/arm/humanic_robot_reverse/install" TYPE FILE FILES
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/setup.bash"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/arm/reverse_ws/install/setup.sh;/root/arm/reverse_ws/install/local_setup.sh")
+   "/home/bubble/桌面/arm/humanic_robot_reverse/install/setup.sh;/home/bubble/桌面/arm/humanic_robot_reverse/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/arm/reverse_ws/install" TYPE FILE FILES
-    "/root/arm/reverse_ws/build/catkin_generated/installspace/setup.sh"
-    "/root/arm/reverse_ws/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/bubble/桌面/arm/humanic_robot_reverse/install" TYPE FILE FILES
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/setup.sh"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/arm/reverse_ws/install/setup.zsh;/root/arm/reverse_ws/install/local_setup.zsh")
+   "/home/bubble/桌面/arm/humanic_robot_reverse/install/setup.zsh;/home/bubble/桌面/arm/humanic_robot_reverse/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/arm/reverse_ws/install" TYPE FILE FILES
-    "/root/arm/reverse_ws/build/catkin_generated/installspace/setup.zsh"
-    "/root/arm/reverse_ws/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/bubble/桌面/arm/humanic_robot_reverse/install" TYPE FILE FILES
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/setup.zsh"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/arm/reverse_ws/install/setup.fish;/root/arm/reverse_ws/install/local_setup.fish")
+   "/home/bubble/桌面/arm/humanic_robot_reverse/install/setup.fish;/home/bubble/桌面/arm/humanic_robot_reverse/install/local_setup.fish")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/arm/reverse_ws/install" TYPE FILE FILES
-    "/root/arm/reverse_ws/build/catkin_generated/installspace/setup.fish"
-    "/root/arm/reverse_ws/build/catkin_generated/installspace/local_setup.fish"
+file(INSTALL DESTINATION "/home/bubble/桌面/arm/humanic_robot_reverse/install" TYPE FILE FILES
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/setup.fish"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/local_setup.fish"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/root/arm/reverse_ws/install/.rosinstall")
+   "/home/bubble/桌面/arm/humanic_robot_reverse/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/root/arm/reverse_ws/install" TYPE FILE FILES "/root/arm/reverse_ws/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/bubble/桌面/arm/humanic_robot_reverse/install" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/root/arm/reverse_ws/build/gtest/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/trac_ik/trac_ik/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/reverse_bringup/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/joint_state_merger/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/BRX042501/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/trac_ik/trac_ik_lib/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/brx_ik_solver/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/trac_ik/trac_ik_examples/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/trac_ik/trac_ik_kinematics_plugin/cmake_install.cmake")
-  include("/root/arm/reverse_ws/build/trac_ik/trac_ik_python/cmake_install.cmake")
+  include("/home/bubble/桌面/arm/humanic_robot_reverse/build/gtest/cmake_install.cmake")
+  include("/home/bubble/桌面/arm/humanic_robot_reverse/build/reverse_bringup/cmake_install.cmake")
+  include("/home/bubble/桌面/arm/humanic_robot_reverse/build/joint_state_merger/cmake_install.cmake")
+  include("/home/bubble/桌面/arm/humanic_robot_reverse/build/BRX042501/cmake_install.cmake")
+  include("/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/cmake_install.cmake")
 
 endif()
 
@@ -166,5 +161,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/root/arm/reverse_ws/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bubble/桌面/arm/humanic_robot_reverse/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

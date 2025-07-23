@@ -1,2 +1,2 @@
-BRX042501:brx_ik_solver:joint_state_merger:reverse_bringup:trac_ik/trac_ik:trac_ik/trac_ik_examples:trac_ik/trac_ik_kinematics_plugin:trac_ik/trac_ik_lib:trac_ik/trac_ik_python
--DCATKIN_DEVEL_PREFIX=/root/arm/reverse_ws/devel -DCMAKE_INSTALL_PREFIX=/root/arm/reverse_ws/install -G Unix Makefiles
+BRX042501:brx_ik_solver:joint_state_merger:reverse_bringup
+-DCATKIN_DEVEL_PREFIX=/home/bubble/桌面/arm/humanic_robot_reverse/devel -DCMAKE_INSTALL_PREFIX=/home/bubble/桌面/arm/humanic_robot_reverse/install -G Unix Makefiles

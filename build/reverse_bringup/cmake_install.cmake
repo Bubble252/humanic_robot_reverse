@@ -1,8 +1,8 @@
-# Install script for directory: /root/arm/reverse_ws/src/reverse_bringup
+# Install script for directory: /home/bubble/桌面/arm/humanic_robot_reverse/src/reverse_bringup
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/arm/reverse_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bubble/桌面/arm/humanic_robot_reverse/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/arm/reverse_ws/build/reverse_bringup/catkin_generated/installspace/reverse_bringup.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/reverse_bringup/catkin_generated/installspace/reverse_bringup.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/reverse_bringup/cmake" TYPE FILE FILES
-    "/root/arm/reverse_ws/build/reverse_bringup/catkin_generated/installspace/reverse_bringupConfig.cmake"
-    "/root/arm/reverse_ws/build/reverse_bringup/catkin_generated/installspace/reverse_bringupConfig-version.cmake"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/reverse_bringup/catkin_generated/installspace/reverse_bringupConfig.cmake"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/reverse_bringup/catkin_generated/installspace/reverse_bringupConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/reverse_bringup" TYPE FILE FILES "/root/arm/reverse_ws/src/reverse_bringup/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/reverse_bringup" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/reverse_bringup/package.xml")
 endif()
 

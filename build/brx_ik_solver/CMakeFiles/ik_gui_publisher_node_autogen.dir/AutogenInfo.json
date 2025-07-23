@@ -1,14 +1,14 @@
 {
-	"BUILD_DIR" : "/root/arm/reverse_ws/build/brx_ik_solver/ik_gui_publisher_node_autogen",
-	"CMAKE_BINARY_DIR" : "/root/arm/reverse_ws/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/root/arm/reverse_ws/build/brx_ik_solver",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/root/arm/reverse_ws/src/brx_ik_solver",
+	"BUILD_DIR" : "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/ik_gui_publisher_node_autogen",
+	"CMAKE_BINARY_DIR" : "/home/bubble/桌面/arm/humanic_robot_reverse/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
-	"CMAKE_SOURCE_DIR" : "/root/arm/reverse_ws/src",
+	"CMAKE_SOURCE_DIR" : "/home/bubble/桌面/arm/humanic_robot_reverse/src",
 	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/root/arm/reverse_ws/build/brx_ik_solver/ik_gui_publisher_node_autogen/include",
-	"MOC_COMPILATION_FILE" : "/root/arm/reverse_ws/build/brx_ik_solver/ik_gui_publisher_node_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/ik_gui_publisher_node_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/ik_gui_publisher_node_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -28,10 +28,10 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/root/arm/reverse_ws/build/brx_ik_solver",
-		"/root/arm/reverse_ws/src/brx_ik_solver",
-		"/root/arm/reverse_ws/devel/include",
-		"/root/arm/reverse_ws/src/brx_ik_solver/include",
+		"/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver",
+		"/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver",
+		"/home/bubble/桌面/arm/humanic_robot_reverse/devel/include",
+		"/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/include",
 		"/opt/ros/noetic/include",
 		"/opt/ros/noetic/include/xmlrpcpp",
 		"/usr/include/eigen3",
@@ -60,25 +60,25 @@
 		"-c",
 		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/root/arm/reverse_ws/build/brx_ik_solver/ik_gui_publisher_node_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/ik_gui_publisher_node_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/ik_gui_publisher_node_autogen.dir/ParseCache.txt",
+	"PARALLEL" : 24,
+	"PARSE_CACHE_FILE" : "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/CMakeFiles/ik_gui_publisher_node_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
-	"SETTINGS_FILE" : "/root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/ik_gui_publisher_node_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/CMakeFiles/ik_gui_publisher_node_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/root/arm/reverse_ws/src/brx_ik_solver/src/ik_gui_publisher_node.cpp",
+			"/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/src/ik_gui_publisher_node.cpp",
 			"MU"
 		]
 	],
 	"UIC_OPTIONS" : [],
-	"UIC_SEARCH_PATHS" : [ "/root/arm/reverse_ws/src/brx_ik_solver/ui" ],
+	"UIC_SEARCH_PATHS" : [ "/home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/ui" ],
 	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

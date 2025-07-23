@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/arm/reverse_ws/src
+CMAKE_SOURCE_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
+CMAKE_BINARY_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/build
 
 # Utility rule file for _brx_ik_solver_generate_messages_check_deps_IkControlInput.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
 include brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/progress.make
 
 brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput:
-	cd /root/arm/reverse_ws/build/brx_ik_solver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py brx_ik_solver /root/arm/reverse_ws/src/brx_ik_solver/msg/IkControlInput.msg geometry_msgs/Pose:geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/msg/IkControlInput.msg geometry_msgs/Point:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Pose
 
 _brx_ik_solver_generate_messages_check_deps_IkControlInput: brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput
 _brx_ik_solver_generate_messages_check_deps_IkControlInput: brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/build.make
@@ -67,10 +67,10 @@ brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlIn
 .PHONY : brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/build
 
 brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/clean:
-	cd /root/arm/reverse_ws/build/brx_ik_solver && $(CMAKE_COMMAND) -P CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/cmake_clean.cmake
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver && $(CMAKE_COMMAND) -P CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/cmake_clean.cmake
 .PHONY : brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/clean
 
 brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/depend:
-	cd /root/arm/reverse_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/arm/reverse_ws/src /root/arm/reverse_ws/src/brx_ik_solver /root/arm/reverse_ws/build /root/arm/reverse_ws/build/brx_ik_solver /root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bubble/桌面/arm/humanic_robot_reverse/src /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/build /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : brx_ik_solver/CMakeFiles/_brx_ik_solver_generate_messages_check_deps_IkControlInput.dir/depend
 

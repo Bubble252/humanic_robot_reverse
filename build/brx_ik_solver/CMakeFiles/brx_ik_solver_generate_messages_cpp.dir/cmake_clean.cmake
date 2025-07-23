@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/root/arm/reverse_ws/devel/include/brx_ik_solver/IkControlInput.h"
+  "/home/bubble/桌面/arm/humanic_robot_reverse/devel/include/brx_ik_solver/IkControlInput.h"
   "CMakeFiles/brx_ik_solver_generate_messages_cpp"
 )
 

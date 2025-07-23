@@ -99,8 +99,21 @@ private:
         double roll, pitch, yaw;
         tf::Matrix3x3(quat).getRPY(roll, pitch, yaw);
 
-        KDL::Frame target_pose(KDL::Rotation::RPY(roll, pitch, yaw),
+        KDL::Frame target_world(KDL::Rotation::RPY(roll, pitch, yaw),
                               KDL::Vector(pose.position.x, pose.position.y, pose.position.z));
+
+        
+        // ArmL01_Link 相对 base_link 的姿态补偿（取逆变换）
+        KDL::Frame base_to_Arm01(
+        KDL::Rotation::RPY(1.57, 0, 3.14), 
+        KDL::Vector(0, 0, 0)); // 假设只有姿态补偿，没有位置偏移（或者根据TF填充）
+
+
+
+        // 将目标从 base_link 系转换到 Arm01_Link 系下
+        KDL::Frame target_pose = base_to_Arm01 * target_world;       
+
+
 
         // 用最新缓存的机械臂关节角度赋初值 q_init_
         for (size_t i = 0; i < q_init_.rows(); ++i) {
@@ -112,34 +125,56 @@ private:
         ROS_INFO(" Position: [%.3f, %.3f, %.3f]", pose.position.x, pose.position.y, pose.position.z);
         ROS_INFO(" RPY: [%.3f, %.3f, %.3f]", roll, pitch, yaw);
 
-        // === TRAC-IK 求解 ===
-        int tracik_result = tracik_solver_->CartToJnt(q_init_, target_pose, q_result_);
-        if (tracik_result >= 0) {
-            ROS_INFO("✅ TRAC-IK Solved:");
-            sensor_msgs::JointState joint_msg;
-            joint_msg.header.stamp = ros::Time::now();
+        // // === TRAC-IK 求解 ===
+        // int tracik_result = tracik_solver_->CartToJnt(q_init_, target_pose, q_result_);
+        // if (tracik_result >= 0) {
+        //     ROS_INFO("✅ TRAC-IK Solved:");
+        //     sensor_msgs::JointState joint_msg;
+        //     joint_msg.header.stamp = ros::Time::now();
 
-            for (size_t i = 0; i < joint_names_.size(); ++i) {
-                joint_msg.name.push_back(joint_names_[i]);
-                joint_msg.position.push_back(q_result_(i));
-                ROS_INFO("  [%s] = %.3f", joint_names_[i].c_str(), q_result_(i));
-            }
-            joint_pub_.publish(joint_msg);
-        } else {
-            ROS_WARN(" TRAC-IK failed. Code: %d", tracik_result);
-        }
+        //     for (size_t i = 0; i < joint_names_.size(); ++i) {
+        //         joint_msg.name.push_back(joint_names_[i]);
+        //         joint_msg.position.push_back(q_result_(i));
+        //         ROS_INFO("  [%s] = %.3f", joint_names_[i].c_str(), q_result_(i));
+        //     }
+        //     joint_pub_.publish(joint_msg);
+        // } else {
+        //     ROS_WARN(" TRAC-IK failed. Code: %d", tracik_result);
+        // }
 
-        // === KDL-LMA 求解 ===
-        KDL::JntArray kdl_result(kdl_chain_.getNrOfJoints());
-        int kdl_ret = ik_solver_kdl_->CartToJnt(q_init_, target_pose, kdl_result);
-        if (kdl_ret >= 0) {
-            ROS_INFO("KDL-LMA Solved:");
-            for (size_t i = 0; i < joint_names_.size(); ++i) {
-                ROS_INFO("  [%s] = %.3f", joint_names_[i].c_str(), kdl_result(i));
-            }
-        } else {
-            ROS_WARN(" KDL-LMA failed. Code: %d", kdl_ret);
+        // // === KDL-LMA 求解 ===
+        // KDL::JntArray kdl_result(kdl_chain_.getNrOfJoints());
+        // int kdl_ret = ik_solver_kdl_->CartToJnt(q_init_, target_pose, kdl_result);
+        // if (kdl_ret >= 0) {
+        //     ROS_INFO("KDL-LMA Solved:");
+        //     for (size_t i = 0; i < joint_names_.size(); ++i) {
+        //         ROS_INFO("  [%s] = %.3f", joint_names_[i].c_str(), kdl_result(i));
+        //     }
+        // } else {
+        //     ROS_WARN(" KDL-LMA failed. Code: %d", kdl_ret);
+        // }
+
+            // === KDL-LMA 求解 ===
+    KDL::JntArray kdl_result(kdl_chain_.getNrOfJoints());
+    int kdl_ret = ik_solver_kdl_->CartToJnt(q_init_, target_pose, kdl_result);
+    if (kdl_ret >= 0) {
+        ROS_INFO("✅ KDL-LMA Solved:");
+        sensor_msgs::JointState joint_msg;
+        joint_msg.header.stamp = ros::Time::now();
+
+        for (size_t i = 0; i < joint_names_.size(); ++i) {
+            joint_msg.name.push_back(joint_names_[i]);
+            joint_msg.position.push_back(kdl_result(i));
+            ROS_INFO("  [%s] = %.3f", joint_names_[i].c_str(), kdl_result(i));
         }
+        joint_pub_.publish(joint_msg);
+    } else {
+        ROS_WARN(" KDL-LMA failed. Code: %d", kdl_ret);
+    }
+        
+        
+        
+        
     }
 
     ros::NodeHandle nh_;

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/arm/reverse_ws/src
+CMAKE_SOURCE_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
+CMAKE_BINARY_DIR = /home/bubble/桌面/arm/humanic_robot_reverse/build
 
 # Utility rule file for ik_solver_node_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /root/arm/reverse_ws/build
 include brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/progress.make
 
 brx_ik_solver/CMakeFiles/ik_solver_node_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/arm/reverse_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target ik_solver_node"
-	cd /root/arm/reverse_ws/build/brx_ik_solver && /usr/bin/cmake -E cmake_autogen /root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bubble/桌面/arm/humanic_robot_reverse/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target ik_solver_node"
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver && /usr/bin/cmake -E cmake_autogen /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/AutogenInfo.json ""
 
 ik_solver_node_autogen: brx_ik_solver/CMakeFiles/ik_solver_node_autogen
 ik_solver_node_autogen: brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/build.make
@@ -68,10 +68,10 @@ brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/build: ik_solver_node_autoge
 .PHONY : brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/build
 
 brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/clean:
-	cd /root/arm/reverse_ws/build/brx_ik_solver && $(CMAKE_COMMAND) -P CMakeFiles/ik_solver_node_autogen.dir/cmake_clean.cmake
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver && $(CMAKE_COMMAND) -P CMakeFiles/ik_solver_node_autogen.dir/cmake_clean.cmake
 .PHONY : brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/clean
 
 brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/depend:
-	cd /root/arm/reverse_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/arm/reverse_ws/src /root/arm/reverse_ws/src/brx_ik_solver /root/arm/reverse_ws/build /root/arm/reverse_ws/build/brx_ik_solver /root/arm/reverse_ws/build/brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bubble/桌面/arm/humanic_robot_reverse/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bubble/桌面/arm/humanic_robot_reverse/src /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/build /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver /home/bubble/桌面/arm/humanic_robot_reverse/build/brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : brx_ik_solver/CMakeFiles/ik_solver_node_autogen.dir/depend
 

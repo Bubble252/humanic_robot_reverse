@@ -1,8 +1,8 @@
-# Install script for directory: /root/arm/reverse_ws/src/BRX042501
+# Install script for directory: /home/bubble/桌面/arm/humanic_robot_reverse/src/BRX042501
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/root/arm/reverse_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/bubble/桌面/arm/humanic_robot_reverse/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,33 +38,33 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/root/arm/reverse_ws/build/BRX042501/catkin_generated/installspace/BRX042501.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/build/BRX042501/catkin_generated/installspace/BRX042501.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/cmake" TYPE FILE FILES
-    "/root/arm/reverse_ws/build/BRX042501/catkin_generated/installspace/BRX042501Config.cmake"
-    "/root/arm/reverse_ws/build/BRX042501/catkin_generated/installspace/BRX042501Config-version.cmake"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/BRX042501/catkin_generated/installspace/BRX042501Config.cmake"
+    "/home/bubble/桌面/arm/humanic_robot_reverse/build/BRX042501/catkin_generated/installspace/BRX042501Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501" TYPE FILE FILES "/root/arm/reverse_ws/src/BRX042501/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501" TYPE FILE FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/BRX042501/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/config" TYPE DIRECTORY FILES "/root/arm/reverse_ws/src/BRX042501/config/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/config" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/BRX042501/config/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/launch" TYPE DIRECTORY FILES "/root/arm/reverse_ws/src/BRX042501/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/launch" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/BRX042501/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/meshes" TYPE DIRECTORY FILES "/root/arm/reverse_ws/src/BRX042501/meshes/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/meshes" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/BRX042501/meshes/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/urdf" TYPE DIRECTORY FILES "/root/arm/reverse_ws/src/BRX042501/urdf/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/BRX042501/urdf" TYPE DIRECTORY FILES "/home/bubble/桌面/arm/humanic_robot_reverse/src/BRX042501/urdf/")
 endif()
 

@@ -67,14 +67,14 @@ set(brx_ik_solver_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(brx_ik_solver_SOURCE_PREFIX /root/arm/reverse_ws/src/brx_ik_solver)
-  set(brx_ik_solver_DEVEL_PREFIX /root/arm/reverse_ws/devel)
+  set(brx_ik_solver_SOURCE_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver)
+  set(brx_ik_solver_DEVEL_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/devel)
   set(brx_ik_solver_INSTALL_PREFIX "")
   set(brx_ik_solver_PREFIX ${brx_ik_solver_DEVEL_PREFIX})
 else()
   set(brx_ik_solver_SOURCE_PREFIX "")
   set(brx_ik_solver_DEVEL_PREFIX "")
-  set(brx_ik_solver_INSTALL_PREFIX /root/arm/reverse_ws/install)
+  set(brx_ik_solver_INSTALL_PREFIX /home/bubble/桌面/arm/humanic_robot_reverse/install)
   set(brx_ik_solver_PREFIX ${brx_ik_solver_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /root/arm/reverse_ws/install/lib;/root/arm/reverse_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/bubble/桌面/arm/humanic_robot_reverse/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

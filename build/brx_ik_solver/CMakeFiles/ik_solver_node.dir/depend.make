@@ -3,6 +3,8 @@
 
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/ik_solver_node_autogen/mocs_compilation.cpp.o: brx_ik_solver/ik_solver_node_autogen/mocs_compilation.cpp
 
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /home/bubble/桌面/arm/humanic_robot_reverse/devel/include/brx_ik_solver/IkControlInput.h
+brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /home/bubble/桌面/arm/humanic_robot_reverse/src/brx_ik_solver/src/ik_solver_node.cpp
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/Point32.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/geometry_msgs/PointStamped.h
@@ -120,6 +122,4 @@ brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/n
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/urdf/visibility_control.hpp
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h
 brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /opt/ros/noetic/include/xmlrpcpp/XmlRpcValue.h
-brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /root/arm/reverse_ws/devel/include/brx_ik_solver/IkControlInput.h
-brx_ik_solver/CMakeFiles/ik_solver_node.dir/src/ik_solver_node.cpp.o: /root/arm/reverse_ws/src/brx_ik_solver/src/ik_solver_node.cpp
 
